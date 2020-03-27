@@ -36,3 +36,5 @@ This is defined as, for each point, the CIAD-distance to the point with the lowe
 Then sort the set
 
 Then, calculate the median of the sorted set
+
+**This is the threshold**
