@@ -43,7 +43,7 @@ Create a lambda to take x and tell if it is less than or equal to the threshold
 
 *In Elixir*
 
-fn(x) -> x<=thresh end
+`fn(x) -> x<=thresh end`
 
 **THIS IS PASSED AS DATA, SO IT IS A LAMBDA NOT AN ANONYMOUS FUNCTION**
 
