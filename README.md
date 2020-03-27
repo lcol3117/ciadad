@@ -50,3 +50,11 @@ fn(x) -> x<=thresh end
 lambda x : x<=thresh
 
 **THIS IS PASSED AS DATA, SO IT IS A LAMBDA NOT AN ANONYMOUS FUNCTION**
+
+And, use that lambda to map the data
+
+*In Elixir*
+
+Enum.map(vals,fn(x) -> x<=thresh end)
+
+#vals was the original, non-sorted, CIAD-distance transform
