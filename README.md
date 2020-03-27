@@ -39,7 +39,7 @@ Then, calculate the median of the sorted set
 
 **This is the threshold**
 
-Create an anonymous function to take x and tell if it is less than or equal to the threshold
+Create a lambda to take x and tell if it is less than or equal to the threshold
 
 *In Elixir*
 
@@ -48,3 +48,5 @@ fn(x) -> x<=thresh end
 *In Python (In case you use python and find this confusing)*
 
 lambda x : x<=thresh
+
+**THIS IS PASSED AS DATA, SO IT IS A LAMBDA NOT AN ANONYMOUS FUNCTION**
