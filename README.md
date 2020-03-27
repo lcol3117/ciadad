@@ -45,10 +45,6 @@ Create a lambda to take x and tell if it is less than or equal to the threshold
 
 fn(x) -> x<=thresh end
 
-*In Python (In case you use python and find this confusing)*
-
-lambda x : x<=thresh
-
 **THIS IS PASSED AS DATA, SO IT IS A LAMBDA NOT AN ANONYMOUS FUNCTION**
 
 And, use that lambda to map the data
