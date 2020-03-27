@@ -44,3 +44,7 @@ Create an anonymous function to take x and tell if it is less than or equal to t
 *In Elixir*
 
 fn(x) -> x<=thresh end
+
+*In Python (In case you use python and find this confusing)*
+
+lambda x : x<=thresh
