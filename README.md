@@ -19,3 +19,5 @@ CIAD-distance(d1,d2) = max(\|d2\[0\]-d1\[0\]|,|d2\[1\]-d1\[1\]\|)
 
 First, perform a CIAD Distance Transform on the data
 
+This is defined as, for each point, the CIAD-distance to the point with the lowest CIAD-distance to it
+
