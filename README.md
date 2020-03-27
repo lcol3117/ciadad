@@ -38,3 +38,5 @@ Then sort the set
 Then, calculate the median of the sorted set
 
 **This is the threshold**
+
+Create an anonymous function to take x and tell if it is less than or equal to the threshold
