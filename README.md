@@ -33,3 +33,4 @@ This is defined as, for each point, the CIAD-distance to the point with the lowe
     
   `replace i with minimum in the new set`
 
+Then, calculate the median of the set
