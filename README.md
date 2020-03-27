@@ -51,6 +51,6 @@ And, use that lambda to map the data
 
 *In Elixir*
 
-Enum.map(vals,fn(x) -> x<=thresh end)
+`Enum.map(vals,fn(x) -> x<=thresh end)`
 
-#vals was the original, non-sorted, CIAD-distance transform
+`#vals was the original, non-sorted, CIAD-distance transform`
