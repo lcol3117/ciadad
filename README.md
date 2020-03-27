@@ -21,3 +21,12 @@ First, perform a CIAD Distance Transform on the data
 
 This is defined as, for each point, the CIAD-distance to the point with the lowest CIAD-distance to it
 
+`for i in data:`
+
+  `reset minimum`
+  
+  `for i2 in data:`
+  
+    update minimum CIAD-dist(i,i2)
+    
+  `replace i with minimum`
