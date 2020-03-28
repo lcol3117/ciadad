@@ -67,16 +67,4 @@ It uses `CIA3d`, `Listops`, and `MiscMath`, which are in the elixir file.
 
 For a list of which are anomalies:
 
-`CIADAD.dist(data,:anomalies)` 
-
-For a list of which are not anomalies:
-
-`CIADAD.dist(data,:usual)`
-
-Note: It defaults to anomalies, so
-
 `CIADAD.dist(data)`
-
-is equivalent to
-
-`CIADAD.dist(data,:anomalies)`
