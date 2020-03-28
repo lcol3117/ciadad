@@ -54,3 +54,29 @@ And, use that lambda to map the data
 `Enum.map(vals,fn(x) -> x<=thresh end)`
 
 `#vals was the original, non-sorted, CIAD-distance transform`
+
+# Use
+
+The `CIADAD` Module contains the code.
+
+It uses `CIA3d`, `Listops`, and `MiscMath`, which are in the elixir file.
+
+***The data should be a list of lists***
+
+***[[1d1,1d2,1d3],[2d1,2d2,2d3],...]***
+
+For a list of which are anomalies:
+
+`CIADAD.dist(data,:anomalies)` 
+
+For a list of which are not anomalies:
+
+`CIADAD.dist(data,:usual)`
+
+Note: It defaults to anomalies, so
+
+`CIADAD.dist(data)`
+
+is equivalent to
+
+`CIADAD.dist(data,:anomalies)`
