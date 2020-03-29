@@ -67,6 +67,16 @@ defmodule Listops do
   def ln([],n) do
     n #base case
   end
+  #inv inverts a boolean list
+  def inv(l) do
+    inv(l,[]) #wrapper
+  end
+  def inv([head|tail],o) do
+    inv(tail,o++[not head]) #recursive case
+  end
+  def inv([],o) do
+    o #base case
+  end
 end
 
 defmodule CIA3d do
@@ -81,10 +91,16 @@ defmodule CIA3d do
 end
 
 defmodule CIADAD do
+  def detect(data,:anomalies) do
+    detect(data)
+  end
+  def detect(data,:usual) do
+    Listops.inv(detect(data))
+  end
   def detect(data) do
     vals=Enum.map(data,fn(x) -> getD(x,data) end)
     thresh=MiscMath.median(vals) #median of vals
-    Enum.map(vals,fn(x) -> x <= thresh end)
+    Enum.map(vals,fn(x) -> x > thresh end)
   end
   def getD(i,data) do
     options=Enum.map(data,fn(x) -> distNotSelf(i,x) end)
@@ -101,4 +117,4 @@ defmodule CIADAD do
 end
 
 mydata=[[3,3,1],[2,3,1],[3,2,1],[4,3,1],[2,2,1],[5,5,1],[5,6,1],[6,5,1],[10,1,1]]
-IO.inspect(CIADAD.detect(mydata))
+IO.inspect(CIADAD.detect(mydata,:usual))
